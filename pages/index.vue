@@ -84,7 +84,7 @@ function resetStateOnClick() {
 async function handleSubmit() {
   resetStateOnClick();
   try {
-    const data = await useFetch(`${window.location.href}api/users`, {
+    const data = await useFetch(`https://nuxtbooking.vercel.app/api/users`, {
       method: "POST",
       body: {
         room: userStore.room,

@@ -4,7 +4,12 @@ export default defineNuxtConfig({
   runtimeConfig: {
     DB: process.env.MONGODB_URI,
   },
-  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt", "@nuxt/telemetry"],
+  modules: [
+    "nuxt-helm",
+    "@nuxtjs/tailwindcss",
+    "@pinia/nuxt",
+    "@nuxt/telemetry",
+  ],
   ssr: false,
   builder: "webpack",
 });

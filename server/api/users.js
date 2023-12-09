@@ -10,6 +10,7 @@ const User = mongoose.model("User", UserSchema);
 
 export default defineEventHandler(async (event) => {
   try {
+    setResponseStatus(event, 207);
     const body = await readBody(event);
     if (body.room === "") {
       return "ERR404";
