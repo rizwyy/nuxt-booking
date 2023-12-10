@@ -10,6 +10,13 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/telemetry",
   ],
-  ssr: false,
-  builder: "webpack",
+  ssr: true,
+  // routeRules: {
+  //   "/api/**": { proxy: { to: "https://nuxtbooking.vercel.app/**" } },
+  // },
+  vite: {
+    server: {
+      cors: false,
+    },
+  },
 });

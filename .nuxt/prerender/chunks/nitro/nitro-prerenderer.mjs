@@ -21,7 +21,7 @@ import { dirname, resolve } from 'file:///Users/rizwin/rizboo/node_modules/pathe
 
 const inlineAppConfig = {
   "nuxt": {
-    "buildId": "d00df45a-18b6-4e0c-8905-0a583e5857b1"
+    "buildId": "08c3e567-f34d-4a34-9e18-08a9c5a620d5"
   }
 };
 
@@ -809,7 +809,7 @@ const _cyPM13 = defineEventHandler((event) => {
 });
 
 const _lazy_jdjdKW = () => import('../users.mjs');
-const _lazy_ehIznW = () => import('../renderer.mjs');
+const _lazy_ehIznW = () => import('../renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
